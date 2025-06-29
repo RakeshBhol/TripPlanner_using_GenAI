@@ -1,12 +1,10 @@
-'''Commands I used: Adding everything to git'''
+***Commands I used: Adding everything to git***
 '''
-uv --version
-pip install uv
-uv --version
-uv init GENAI_Trip_Planner
-cd GENAI_Trip_Planner
-ls
-dir
+***uv --version***
+***pip install uv***
+***uv --version***
+***uv init GENAI_Trip_Planner*** """Create initial setup using this command"""
+***cd GENAI_Trip_Planner***
 '''
 
 '''
