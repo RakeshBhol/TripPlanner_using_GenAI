@@ -1,0 +1,9 @@
+# llm details need to add here like provider and model_name
+# api key will be in .env file
+llm:
+  openai:
+    provider: "openai"
+    model_name: "o4-mini"
+  qroq:
+    provider: "qroq"
+    model_name: "deepseek-r1-distill-llama-70b"

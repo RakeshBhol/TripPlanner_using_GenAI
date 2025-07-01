@@ -43,3 +43,6 @@ deactivate if you have conda cmd installed
 # git remote show origin
 # git push -u origin master
 ```
+```
+# ***uv pip install -r requirements.txt*** 
+```
