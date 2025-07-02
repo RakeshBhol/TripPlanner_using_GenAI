@@ -48,6 +48,9 @@ deactivate if you have conda cmd installed
 # git config --show-origin user.name
 # ## List all configurations ##
 git config --list
+
+**push branch changes from development to master**
+# git push origin development:master
 ```
 ```
 # ***uv pip install -r requirements.txt*** 
