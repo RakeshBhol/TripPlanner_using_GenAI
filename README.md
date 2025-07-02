@@ -42,6 +42,12 @@ deactivate if you have conda cmd installed
 # git push -u origin development
 # git remote show origin
 # git push -u origin master
+
+# ### How to know which repo configured in your current cmd ###
+# git config --show-origin remote.origin.url
+# git config --show-origin user.name
+# ## List all configurations ##
+git config --list
 ```
 ```
 # ***uv pip install -r requirements.txt*** 
