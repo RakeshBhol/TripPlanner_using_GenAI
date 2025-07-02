@@ -10,7 +10,7 @@ from Tools.currency_conversion_tool import CurrencyConverterTool
 
 from prompt_library.prompt import SYSTEM_PROMPT
 from langgraph.graph import StateGraph, MessagesState, END, START
-from langgraph.prebuild import ToolNode, tools_condition
+from langgraph.prebuilt import ToolNode, tools_condition
 
 class GraphBuilder():
     def __init__(self,model_provider: str = "groq"):
@@ -47,7 +47,7 @@ class GraphBuilder():
         graph_builder = StateGraph(MessagesState)  # Store State (list of messages) of each step/LLM
 
         graph_builder.add_node("agent", self.agent_function)
-        graph_builder.add_node("tools". ToolNode(tools=self.tools))
+        graph_builder.add_node("tools", ToolNode(tools=self.tools))
         graph_builder.add_edge(START, "agent")
         graph_builder.add_conditional_edges("agent",tools_condition)
         graph_builder.add_edge("tools","agent")

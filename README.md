@@ -55,3 +55,8 @@ git config --list
 ```
 # ***uv pip install -r requirements.txt*** 
 ```
+```
+***! Commands to start server ***
+streamlit run streamlit_app.py  # For running frontend server
+uvicorn main:app --reload --port 8000   # For running api server
+```
